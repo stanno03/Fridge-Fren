@@ -1,45 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8" />
-    <!--Link to stylesheet -->
-    <!--Reset the stylesheet-->
-    <!--Apply the stylesheet-->
-    <link rel="stylesheet" type="text/css" href="./assets/reset.css" />
-    <link href="/dist/output.css" rel="stylesheet">
-    <title>Fridge Fren</title> 
-</head>
-
-<body>
-    <header class="header"> 
-    <!--#### Global Toolbar ####-->
-        <h1>Fridge Fren</h1>
-        <nav>
-        <!--#### Navigation Bar ####-->
+  <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Fridge Fren</title>
+      <!--Link to stylesheet -->
+      <!--Reset the stylesheet-->
+      <!--Apply the stylesheet-->
+      <link rel="stylesheet" type="text/css" href="./assets/reset.css" />  <!--! HAVE TO ADD THE RESET FILE-->
+      <link rel="stylesheet" type="text/css" href="src/input.css" />
+      <script src="https://cdn.tailwindcss.com"></script>
+      <script src="./tailwind.js"></script> 
+  </head>
+  
+  <body>
+    <section class="page section bg-green-200 justify-center align-center flex">
+      <div class="container w-1/2 h-fit m-width-lg">
+        <div class="brand text-3xl text-center font-bold underline">Fridge Fren</div>  <!-- #### Logo styled via Tailwind Css and using Google Fonts####-->
+        <nav>  <!-- #### Navigation Bar ####-->
             <ul>
-                <li><type=button href="#My-Favourites"><u>My Favourites</u></li>
-                <li><type=button href="#How-it-Works"><u>How It Works</u></li>
-                <li><type=button href="#Contact-Us"><u>Contact Us</u></li>
+              <li><type=button href="#My-Favourites"><u>My Favourites</u></li>
+              <li><type=button href="#How-it-Works"><u>How It Works</u></li>
+              <li><type=button href="#Contact-Us"><u>Contact Us</u></li>
             </ul>
         </nav>
-    </header>
-    <!--#### Hero Image ####-->
-    <div class="hero">
-        <h2 class="hero-h2">Hero Image Name HERE</h2>
-    </div> 
-
+        <form>
+            <input class="rounded max-w-fit inline-block" type="text" placeholder="Search Recipe...">
+            <ion-icon name="search"></ion-icon>
+        </form>
+        <div class="search-results m-50 w-full auto-rows-fr> <!--! NEED TO CHECK THE GRID SETUP -->
+            <div class="item w-screen bg-cover flex-1 max-w-fit">
+                <img src="triple-chocolate-cake-4.jpeg" alt=""> <!--! ENTER IMAGE HERE-->
+                <div class="flex container flex-1">
+                    <h1 class="title">This is a recipe</h1>
+                    <a href="#">View Recipe</a>
+                </div>
+                <p class="item-data">Calories: 120</p>
+            </div>
+            <div class="item w-screen bg-cover flex-1 max-w-fit">
+                <img src="triple-chocolate-cake-4.jpeg" alt=""> <!--! ENTER IMAGE HERE-->
+                <div class="flex container flex-1">
+                    <h2 class="title">This is a recipe</h2>
+                    <a href="#">View Recipe</a>
+                </div>
+                <p class="item-data">Calories: 120</p>
+            </div>
+            <div class="item w-screen bg-cover flex-1 max-w-fit">
+                <img src="triple-chocolate-cake-4.jpeg" alt=""> <!--! ENTER IMAGE HERE-->
+                <div class="flex container flex-1">
+                    <h2 class="title">This is a recipe</h2>
+                    <a href="#">View Recipe</a>
+                </div>
+                <p class="item-data">Calories: 120</p>
+            </div>
+        </div>
+    </section>
     
-
+        
+      <!--#### Hero Image ####-->
+        <div class="hero">
+          <h2 class="hero-h2">Hero Image Name HERE</h2>
+            <ul>
+              <li><button href="Start-Cooking">Start Cooking call to action</button></li>
+            </ul>
+        </div> 
+  
+        <div class="containerEl">
+            <!--! Nat to check if we can use TikTok workaround or YouTube -->
+            <!-- <div id="TikTok-Embed-0" class="tiktok-embed" style="max-width: 605px;min-width: 325px;">
+                <section>
+                  <a target="_blank" title="@fridgefren" href="https://www.tiktok.com/@gordonramsayofficial">@GordonRamsayOfficial</a>
+                  <p>♬ original sound - Fridge Fren</p>
+                </section>
+            </div> -->
+        </div>
+  
+  
         <footer class="footer">
             <ul>
-                <u href="#My-favourites">Phone number</u></li>
-                <u href="#Home">Email</u></li>
-                <u href="#Shopping List">GitHub</u></li>
-                <u href="#Back">Twitter</u></li>
+              <u href="#My-favourites">My Faves</u></li>
+              <u href="#Home">Home</u></li>
+              <u href="#Shopping List">Shopping List</u></li>
+              <u href="#Back">Back</u></li>
             </ul>
         </footer>
-    </div>
-</body>
-
+        <!-- CDN for the search icon -->
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    </body>
+  
 </html>
+  

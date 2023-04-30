@@ -1,3 +1,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap');
+
+.brand{
+    font-family: 'Dancing Script', cursive;
+}
+
+.search-results{
+    margin-top: 50px;
+    width: 100%;
+    display: grid;
+    grid-gap: 23px;
+    grid-template: auto / repeat(auto-fit, minmax(250px, 1fr));
+}
