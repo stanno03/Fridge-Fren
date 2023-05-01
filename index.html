@@ -14,59 +14,82 @@
       <script src="./tailwind.js"></script> 
   </head>
   
-  <body>
-    <section class="page section bg-green-200 justify-center align-center flex">
-      <div class="container w-1/2 h-fit m-width-lg">
-        <div class="brand text-3xl text-center font-bold underline">Fridge Fren</div>  <!-- #### Logo styled via Tailwind Css and using Google Fonts####-->
-        <nav>  <!-- #### Navigation Bar ####-->
+  <body class="box content m-0 p-0">
+    <section class="page section bg-green-200 p-100px px-px justify-center align-center flex min-h-screen	w-full">
+      <div class="container w-11/12 h-fit m-width-lg m-0 mx-auto">
+        <div class="brand text-3xl text-center font-bold underline mb-8">Fridge Fren</div>  <!-- #### Logo styled via Tailwind Css and using Google Fonts####-->
+        <nav class="inline-block" >  <!-- #### Navigation Bar ####-->
             <ul>
-              <li><type=button href="#My-Favourites"><u>My Favourites</u></li>
+              <li><type=button href="#My-Favorites"><u>My Favorites</u></li>
               <li><type=button href="#How-it-Works"><u>How It Works</u></li>
               <li><type=button href="#Contact-Us"><u>Contact Us</u></li>
             </ul>
         </nav>
-        <form>
-            <input class="rounded max-w-fit inline-block" type="text" placeholder="Search Recipe...">
+        <form class="rounded w-11/12 max-w-screen-sm m-5 mx-auto">
+            <input class="rounded w-11/12 p-2.5 text-xl inline-block" type="text" placeholder="Search Recipe...">
             <ion-icon name="search"></ion-icon>
         </form>
-        <div class="search-results m-50 w-full auto-rows-fr> <!--! NEED TO CHECK THE GRID SETUP -->
-            <div class="item w-screen bg-cover flex-1 max-w-fit">
-                <img src="triple-chocolate-cake-4.jpeg" alt=""> <!--! ENTER IMAGE HERE-->
-                <div class="flex container flex-1">
-                    <h1 class="title">This is a recipe</h1>
-                    <a href="#">View Recipe</a>
+        <div class="search-results my-0.5 w-full grid gap-6">
+            <!--! ### Below here are just boilerplate cards for suggested (random?) recipes, styled in Tailwind language ### -->
+            <!-- ### Do we need to pull them via the API? ### -->
+            <div class="item w-screen bg-cover flex-1 max-w-fit rounded-lg bg-green-300 p-3.5 overflow-hidden">
+                <img class="w-full h-72 rounded" src="img/triple-chocolate-cake-4.jpeg" alt="chocolate cake"> 
+                <div class="flex items-center justify-between">
+                    <h1 class="title text-blue-900 mt-1.25 ml-2.5 text-xl">This is a recipe</h1>
+                    <a class="view-button text-center w-32 pt-4 py-0 bg-green-400 text-sm no-underline mt-8 self-start" href="#">View Recipe</a>
                 </div>
-                <p class="item-data">Calories: 120</p>
+                <p class="item-data block mt-3 text-sm">Calories: 120</p>
             </div>
-            <div class="item w-screen bg-cover flex-1 max-w-fit">
-                <img src="triple-chocolate-cake-4.jpeg" alt=""> <!--! ENTER IMAGE HERE-->
-                <div class="flex container flex-1">
-                    <h2 class="title">This is a recipe</h2>
-                    <a href="#">View Recipe</a>
+            <div class="item w-screen bg-cover flex-1 max-w-fit rounded-lg bg-green-300 p-3.5 overflow-hidden">
+                <img class="w-full h-72 rounded" src="img/anh-nguyen-kcA-c3f_3FE-unsplash.jpg" alt=""> 
+                <div class="flex items-center justify-between">
+                    <h1 class="title text-blue-900 mt-1.25 ml-2.5 text-xl">This is a recipe</h1>
+                    <a class="view-button text-center w-32 pt-4 py-0 bg-green-400 text-sm no-underline mt-8 self-start" href="#">View Recipe</a>
                 </div>
-                <p class="item-data">Calories: 120</p>
+                <p class="item-data block mt-3 text-sm">Calories: 120</p>
             </div>
-            <div class="item w-screen bg-cover flex-1 max-w-fit">
-                <img src="triple-chocolate-cake-4.jpeg" alt=""> <!--! ENTER IMAGE HERE-->
-                <div class="flex container flex-1">
-                    <h2 class="title">This is a recipe</h2>
-                    <a href="#">View Recipe</a>
+            <div class="item w-screen bg-cover flex-1 max-w-fit rounded-lg bg-green-300 p-3.5 overflow-hidden">
+                <img class="w-full h-72 rounded" src="img/chad-montano-eeqbbemH9-c-unsplash.jpg" alt=""> 
+                <div class="flex items-center justify-between">
+                    <h1 class="title text-blue-900 mt-1.25 ml-2.5 text-xl">This is a recipe</h1>
+                    <a class="view-button text-center w-32 pt-4 py-0 bg-green-400 text-sm no-underline mt-8 self-start" href="#">View Recipe</a>
                 </div>
-                <p class="item-data">Calories: 120</p>
+                <p class="item-data block mt-3 text-sm">Calories: 120</p>
+            </div><div class="item w-screen bg-cover flex-1 max-w-fit rounded-lg bg-green-300 p-3.5 overflow-hidden">
+                <img class="w-full h-72 rounded" src="img/chad-montano-MqT0asuoIcU-unsplash.jpg" alt=""> 
+                <div class="flex items-center justify-between">
+                    <h1 class="title text-blue-900 mt-1.25 ml-2.5 text-xl">This is a recipe</h1>
+                    <a class="view-button text-center w-32 pt-4 py-0 bg-green-400 text-sm no-underline mt-8 self-start" href="#">View Recipe</a>
+                </div>
+                <p class="item-data block mt-3 text-sm">Calories: 120</p>
+            </div><div class="item w-screen bg-cover flex-1 max-w-fit rounded-lg bg-green-300 p-3.5 overflow-hidden">
+                <img class="w-full h-72 rounded" src="img/lily-banse--YHSwy6uqvk-unsplash.jpg" alt=""> 
+                <div class="flex items-center justify-between">
+                    <h1 class="title text-blue-900 mt-1.25 ml-2.5 text-xl">This is a recipe</h1>
+                    <a class="view-button text-center w-32 pt-4 py-0 bg-green-400 text-sm no-underline mt-8 self-start" href="#">View Recipe</a>
+                </div>
+                <p class="item-data block mt-3 text-sm">Calories: 120</p>
+            </div><div class="item w-screen bg-cover flex-1 max-w-fit rounded-lg bg-green-300 p-3.5 overflow-hidden">
+                <img class="w-full h-72 rounded" src="img/victoria-shes-UC0HZdUitWY-unsplash.jpg" alt=""> 
+                <div class="flex items-center justify-between">
+                    <h1 class="title text-blue-900 mt-1.25 ml-2.5 text-xl">This is a recipe</h1>
+                    <a class="view-button text-center w-32 pt-4 py-0 bg-green-400 text-sm no-underline mt-8 self-start" href="#">View Recipe</a>
+                </div>
+                <p class="item-data block mt-3 text-sm">Calories: 120</p>
             </div>
         </div>
     </section>
     
         
       <!--#### Hero Image ####-->
-        <div class="hero">
+        <!-- <div class="hero">
           <h2 class="hero-h2">Hero Image Name HERE</h2>
             <ul>
               <li><button href="Start-Cooking">Start Cooking call to action</button></li>
             </ul>
         </div> 
   
-        <div class="containerEl">
+        <div class="containerEl"> -->
             <!--! Nat to check if we can use TikTok workaround or YouTube -->
             <!-- <div id="TikTok-Embed-0" class="tiktok-embed" style="max-width: 605px;min-width: 325px;">
                 <section>
@@ -74,7 +97,7 @@
                   <p>♬ original sound - Fridge Fren</p>
                 </section>
             </div> -->
-        </div>
+        <!-- </div> -->
   
   
         <footer class="footer">
