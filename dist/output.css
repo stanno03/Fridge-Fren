@@ -522,15 +522,14 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-.text-3xl {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
+.brand{
+  font-family: 'Dancing Script', cursive;
 }
 
-.font-bold {
-  font-weight: 700;
-}
-
-.underline {
-  text-decoration-line: underline;
+.search-results{
+  margin-top: 50px;
+  width: 100%;
+  display: grid;
+  grid-gap: 23px;
+  grid-template: auto / repeat(auto-fit, minmax(250px, 1fr));
 }
