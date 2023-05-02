@@ -8,10 +8,12 @@
       <!--Link to stylesheet -->
       <!--Reset the stylesheet-->
       <!--Apply the stylesheet-->
-      <link rel="stylesheet" type="text/css" href="./assets/reset.css" />  <!--! HAVE TO ADD THE RESET FILE-->
-      <link rel="stylesheet" type="text/css" href="src/input.css" />
+      <!-- <link rel="stylesheet" type="text/css" href="./assets/reset.css" />  ! HAVE TO ADD THE RESET FILE -->
+      
+      <link rel="stylesheet" type="text/css" href="src/input.css" <a/>
       <script src="https://cdn.tailwindcss.com"></script>
       <script src="./tailwind.js"></script> 
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   </head>
   
   <body class="box content m-0 p-0">
@@ -25,9 +27,11 @@
               <li><type=button href="#Contact-Us"><u>Contact Us</u></li>
             </ul>
         </nav>
+
         <form class="rounded w-11/12 max-w-screen-sm m-5 mx-auto">
             <input class="rounded w-11/12 p-2.5 text-xl inline-block" type="text" placeholder="Search Recipe...">
             <ion-icon name="search"></ion-icon>
+  <main>
         </form>
         <div class="search-results my-0.5 w-full grid gap-6">
             <!--! ### Below here are just boilerplate cards for suggested (random?) recipes, styled in Tailwind language ### -->
@@ -113,6 +117,7 @@
         <!-- CDN for the search icon -->
         <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
         <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+        <script src="search.js"></script>
     </body>
   
 </html>
