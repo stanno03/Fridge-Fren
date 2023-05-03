@@ -25,7 +25,7 @@ $(document).ready(function() {
       for (var i = 0; i < data.results.length; i++) {
         var result = data.results[i];
         var item = '<div class="item w-screen bg-cover flex-1 max-w-fit rounded-lg bg-green-300 p-3.5 overflow-hidden">' +
-          '<img class="w-full h-72 rounded" src="' + result.image + '" alt="' + result.title + '">' +
+          '<img class="w-full h-72 rounded" src="https://spoonacular.com/recipeImages/' + result.image + '" alt="' + result.title + '">' +
           '<div class="flex items-center justify-between">' +
             '<h1 class="title text-blue-900 mt-1.25 ml-2.5 text-xl">' + result.title + '</h1>' +
             '<a class="view-button text-center w-32 pt-4 py-0 bg-green-400 text-sm no-underline mt-8 self-start" href="' + result.sourceUrl + '">View Recipe</a>' +
