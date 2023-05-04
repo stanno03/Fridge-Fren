@@ -1,11 +1,26 @@
-# Fridge-Fren
+# Fridge Fren
 
-## Description with Images
+### Eat Great. Feel Greater!
 
-## Set-up
+Food should be fun. Use Fridge Fren to search for recipes using your available ingredients at home. 
 
-## Using Fridge-Fren
+### User Story
 
+NatalieCampbellGit-patch-14
+AS A foodie…
+
+I WANT TO create new recipes based off what I have in my fridge
+SO THAT I can save money and time
+WHEN I enter an ingredient in the search bar
+THEN I am presented with an array of choices (recipes) relevant to the search input
+WHEN I click on one of them
+THEN I am presented with the recipe instructions with all its data (cooking method, ingredients, calories, time, cuisine)
+WHEN I click on the Add To Favorite
+THEN the relevant recipe gets saved in my local storage 
+SO THAT it can be restored at a later date
+
+### Conditions 
+=======
 ## To-Do/Back Log
 
 
@@ -58,3 +73,4 @@ Fridge Fren was created by [YOUR NAME]. It uses the following APIs and libraries
 
 This project is licensed under the [MIT License](LICENSE).
 © 2023 Fridge Fren
+
