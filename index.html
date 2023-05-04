@@ -89,6 +89,16 @@
             </form>
             <div class="search-results my-0.5 w-full grid gap-6">
               <!-- ########  BOILERPLATE CARDS ##########  -->
+                <body>
+                <p>Google Calendar API Quickstart</p>
+            
+                <!--Add buttons to initiate auth sequence and sign out-->
+                <button id="authorize_button" onclick="handleAuthClick()">Authorize</button>
+                <button id="signout_button" onclick="handleSignoutClick()">Sign Out</button>
+            
+                <pre id="content" style="white-space: pre-wrap;"></pre>  
+                               
+              </body>
                 <div class="item w-screen bg-cover flex-1 max-w-fit rounded-lg bg-green-300 p-3.5 overflow-hidden">
                   <img class="w-full h-72 rounded" src="img/triple-chocolate-cake-4.jpeg" alt="chocolate cake">
                     <div class="flex items-center justify-between">
