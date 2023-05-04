@@ -89,6 +89,13 @@ $(document).ready(function() {
 });
 
 
+// /! Modal function
+// Get the modal
+const modal = document.getElementById("foodFactModal");
+// Get the button that opens the modal
+const button = document.getElementById("foodfact");
+// Get the <span> element that closes the modal
+const span = document.getElementsByClassName("close")[0];
 // Array of food facts
 const foodFacts = [
   "The world's largest pancake was made in Rochdale, Manchester, UK in 1994, which measured 15 meters in diameter and weighed 3 tons.",
@@ -106,22 +113,17 @@ const foodFacts = [
   "The world's most expensive pizza costs $12,000.",
   "Apples are more effective at keeping people awake in the morning than caffeine.",
 ];
-
 // Function to display a random food fact in the modal
 function displayFoodFact() {
   // Get a random food fact from the array by using the Math.random function
   const randomFact = foodFacts[Math.floor(Math.random() * foodFacts.length)];
-
   // Display the food fact in the modal
   document.getElementById("food-fact").innerHTML = randomFact;
-
   // Open the modal by traversing the DOM
   modal.style.display = "block";
 }
-
 // Add event listener (when the user clicks the button, display a random food fact)
 button.addEventListener("click", displayFoodFact);
-
 // When the user clicks on <span> (x), close the modal
 span.addEventListener("click", function() {
   modal.style.display = "none";
