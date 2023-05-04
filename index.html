@@ -5,11 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fridge Fren</title>
-    <!--Link to stylesheet -->
-    <!--Reset the stylesheet-->
-    <!--Apply the stylesheet-->
-    <!-- <link rel="stylesheet" type="text/css" href="./assets/reset.css" />  ! HAVE TO ADD THE RESET FILE -->
-
+    <!-- links -->
     <link rel="stylesheet" type="text/css" href="src/input.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="./tailwind.js"></script>
@@ -19,21 +15,15 @@
 <body class="box content m-0 p-0">
     <section class="page section bg-green-200 p-100px px-px justify-center align-center flex min-h-screen w-full">
         <div class="container w-11/12 h-fit m-width-lg m-0 mx-auto">
-            <!-- #### OLD LOGO ### <div class="brand text-3xl text-center font-bold underline mb-8" 
-                href="ENTER HOMEPAGE HERE ONCE DEPLOYED"
-                alt="">Fridge Fren</div> #### Logo styled via Tailwind Css and using Google Fonts#### -->
-            
 
-            <!--! ### NEW HEADER COMPONENT ###-->
+          <!--! ########## HEADER COMPONENT ##########-->
             <div class="header-2">
-
                 <nav class="bg-green-300 py-2 md:py-4">
                   <div class="container px-4 mx-auto md:flex md:items-center">
-              
                     <div class="flex justify-between items-center">
-                      <a href="#" class="brand text-3xl text-center font-bold underline mb-8" 
-                      href="ENTER HOMEPAGE HERE ONCE DEPLOYED"
-                      alt="">Fridge Fren</a> <!--! either we keep logo here, or we move in the middle up the top? -->
+                      <a href="#" class="brand text-6xl text-center font-bold underline mb-8" 
+                      href="#"><img src="img/anh-nguyen-kcA-c3f_3FE-unsplash.jpg" class="w-full md:hidden py-1"
+                      alt="">Fridge Fren</a>
                       <button class="border border-solid border-gray-600 px-3 py-1 rounded text-gray-600 opacity-50 hover:opacity-75 md:hidden" id="navbar-toggle">
                         <i class="fas fa-bars"></i>
                       </button>
@@ -56,13 +46,17 @@
                     <div class="text-center max-w-2xl mx-auto">
                       <h1 class="text-3xl md:text-4xl font-medium mb-2">Eat great. Feel greater!</h1>
                       <button  class="bg-indigo-600 text-white py-2 px-6 rounded-full text-xl mt-6" id="foodfact">Random Food Fact</button>
-                      <!-- <div class="mt-4">
-                        <img src="//via.placeholder.com/1000x785/fff?text=iMac+Mockup" alt="mockup" class="d-block max-w-full rounded shadow-md">
-                      </div> -->
-                    </div>
-              
+                        <!-- ########  MODAL - Random Food Facts  ########-->
+                        <div id="foodFactModal" class="modal z-10 inset-0 overflow-y-auto hidden">
+                          <div class="modal-content bg-white rounded-lg w-full max-w-md mx-auto p-6">
+                            <p id="food-fact"></p>
+                            <li class="list-none"></li>
+                            <span class="close bg-indigo-600 text-white py-0 px-6 rounded-full text-lg mt-6">&times;</span>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- ######### ETHOS/OBJECTIVES ######## -->
                     <div class="md:flex md:flex-wrap md:-mx-4 mt-6 md:mt-12">
-              
                       <div class="md:w-1/3 md:px-4 xl:px-6 mt-8 md:mt-0 text-center">
                         <span class="w-20 border-t-2 border-solid border-indigo-200 inline-block mb-3"></span>
                         <h5 class="text-xl font-medium uppercase mb-4">Convenience</h5>
@@ -86,7 +80,7 @@
                   </div>
                 </div>
               </div>
-            <!--! -->
+
             <form class="rounded w-11/12 max-w-screen-sm m-5 mx-auto">
                 <input id="search" class="rounded w-11/12 p-2.5 text-xl inline-block" type="text"
                     placeholder="Search Recipe...">
@@ -94,21 +88,22 @@
                 <main>
             </form>
             <div class="search-results my-0.5 w-full grid gap-6">
-                <!--! ### Below here are just boilerplate cards for suggested (random?) recipes, styled in Tailwind language ### -->
-                <!-- ### Do we need to pull them via the API? ### -->
+              <!-- ########  BOILERPLATE CARDS ##########  -->
                 <div class="item w-screen bg-cover flex-1 max-w-fit rounded-lg bg-green-300 p-3.5 overflow-hidden">
-                    <img class="w-full h-72 rounded" src="img/triple-chocolate-cake-4.jpeg" alt="chocolate cake">
+                  <img class="w-full h-72 rounded" src="img/triple-chocolate-cake-4.jpeg" alt="chocolate cake">
                     <div class="flex items-center justify-between">
                         <h1 id="title" class="title text-blue-900 mt-1.25 ml-2.5 text-xl"></h1>
                         <a class="view-button text-center w-32 pt-4 py-0 bg-green-400 text-sm no-underline mt-8 self-start"
-                            href="#">View Recipe</a>
+                            href="#">View Recipe</a>  
                     </div>
                     <p class="item-data block mt-3 text-sm">Calories: 120</p>
                     <ion-icon name="star-outline"></ion-icon>
                     <ion-icon name="star"></ion-icon>
+                    <!-- <button class="add-to-favorites-btn" onclick="addToFavorites()">Add to Favorites</button> --> <!--! TROUBLESHOOT -->
+
                 </div>
                 <div class="item w-screen bg-cover flex-1 max-w-fit rounded-lg bg-green-300 p-3.5 overflow-hidden">
-                    <img class="w-full h-72 rounded" src="img/anh-nguyen-kcA-c3f_3FE-unsplash.jpg" alt="">
+                    <img class="w-full h-72 rounded object-cover" src="img/anh-nguyen-kcA-c3f_3FE-unsplash.jpg" alt="">
                     <div class="flex items-center justify-between">
                         <h1 class="title text-blue-900 mt-1.25 ml-2.5 text-xl"></h1>
                         <a class="view-button text-center w-32 pt-4 py-0 bg-green-400 text-sm no-underline mt-8 self-start"
@@ -117,7 +112,7 @@
                     <p class="item-data block mt-3 text-sm">Calories: 120</p>
                 </div>
                 <div class="item w-screen bg-cover flex-1 max-w-fit rounded-lg bg-green-300 p-3.5 overflow-hidden">
-                    <img class="w-full h-72 rounded" src="img/chad-montano-eeqbbemH9-c-unsplash.jpg" alt="">
+                    <img class="w-full h-72 rounded object-cover" src="img/chad-montano-eeqbbemH9-c-unsplash.jpg" alt="">
                     <div class="flex items-center justify-between">
                         <h1 class="title text-blue-900 mt-1.25 ml-2.5 text-xl"></h1>
                         <a class="view-button text-center w-32 pt-4 py-0 bg-green-400 text-sm no-underline mt-8 self-start"
@@ -126,7 +121,7 @@
                     <p class="item-data block mt-3 text-sm">Calories: 120</p>
                 </div>
                 <div class="item w-screen bg-cover flex-1 max-w-fit rounded-lg bg-green-300 p-3.5 overflow-hidden">
-                    <img class="w-full h-72 rounded" src="img/chad-montano-MqT0asuoIcU-unsplash.jpg" alt="">
+                    <img class="w-full h-72 rounded object-cover" src="img/chad-montano-MqT0asuoIcU-unsplash.jpg" alt="">
                     <div class="flex items-center justify-between">
                         <h1 class="title text-blue-900 mt-1.25 ml-2.5 text-xl"></h1>
                         <a class="view-button text-center w-32 pt-4 py-0 bg-green-400 text-sm no-underline mt-8 self-start"
@@ -135,7 +130,7 @@
                     <p class="item-data block mt-3 text-sm">Calories: 120</p>
                 </div>
                 <div class="item w-screen bg-cover flex-1 max-w-fit rounded-lg bg-green-300 p-3.5 overflow-hidden">
-                    <img class="w-full h-72 rounded" src="img/lily-banse--YHSwy6uqvk-unsplash.jpg" alt="">
+                    <img class="w-full h-72 rounded object-cover" src="img/lily-banse--YHSwy6uqvk-unsplash.jpg" alt="">
                     <div class="flex items-center justify-between">
                         <h1 class="title text-blue-900 mt-1.25 ml-2.5 text-xl"></h1>
                         <a class="view-button text-center w-32 pt-4 py-0 bg-green-400 text-sm no-underline mt-8 self-start"
@@ -144,7 +139,7 @@
                     <p class="item-data block mt-3 text-sm">Calories: 120</p>
                 </div>
                 <div class="item w-screen bg-cover flex-1 max-w-fit rounded-lg bg-green-300 p-3.5 overflow-hidden">
-                    <img class="w-full h-72 rounded" src="img/victoria-shes-UC0HZdUitWY-unsplash.jpg" alt="">
+                    <img class="w-full h-72 rounded object-cover" src="img/victoria-shes-UC0HZdUitWY-unsplash.jpg" alt="">
                     <div class="flex items-center justify-between">
                         <h1 class="title text-blue-900 mt-1.25 ml-2.5 text-xl"></h1>
                         <a class="view-button text-center w-32 pt-4 py-0 bg-green-400 text-sm no-underline mt-8 self-start"
@@ -180,6 +175,7 @@
             </div>
     </section>
 
+NatalieCampbellGit-patch-16
 
     <!--#### Hero Image ####-->
     <!-- <div class="hero">
@@ -201,6 +197,11 @@
 
 <footer aria-label="Site Footer" class="bg-white">
     <div class="mx-auto max-w-screen-xl px-4 pb-8 pt-16 sm:px-6 lg:px-8">
+
+    <!--! ########## FOOTER COMPONENT ##########-->
+    <footer aria-label="Site Footer" class="footer bg-white">
+     <div class="mx-auto max-w-screen-xl px-4 pb-8 pt-16 sm:px-6 lg:px-8">
+main
       <div class="mx-auto max-w-md">
         <strong
           class="block text-center text-xl font-bold text-gray-900 sm:text-3xl"
@@ -369,5 +370,4 @@
 </body>
 
 </html>
-  
-  
+
