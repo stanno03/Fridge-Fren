@@ -60,6 +60,20 @@ Once you have the Fridge Fren website up and running, you can start searching fo
 
 You can click on a recipe to view its ingredients. You can also get a random food fact by clicking on the "Random Food Fact" button.
 
+## Screenshots
+
+### Random Fun Fact Generator
+
+![Screen Shot 2023-05-04 at 6 29 08 pm](https://user-images.githubusercontent.com/126050763/236151778-c4093b8b-bf2a-43a5-85aa-5ad268dc909a.png)
+
+### Search for ingredients
+
+![Screen Shot 2023-05-04 at 6 27 59 pm](https://user-images.githubusercontent.com/126050763/236152208-261e27fc-0a28-455d-b361-08b914133b0b.png)
+
+### Footer 
+![Screen Shot 2023-05-04 at 6 28 12 pm](https://user-images.githubusercontent.com/126050763/236152068-0f51f3f1-f68e-4c51-b508-3f98bd164cd4.png)
+
+
 ## Credits
 
 Fridge Fren was created by [YOUR NAME]. It uses the following APIs and libraries:
