@@ -88,15 +88,6 @@ $(document).ready(function() {
   });
 });
 
-//! Modal function
-// Get the modal
-const modal = document.getElementById("foodFactModal");
-
-// Get the button that opens the modal
-const button = document.getElementById("foodfact");
-
-// Get the <span> element that closes the modal
-const span = document.getElementsByClassName("close")[0];
 
 // Array of food facts
 const foodFacts = [
