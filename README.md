@@ -4,28 +4,6 @@
 
 Food should be fun. Use Fridge Fren to search for recipes using your available ingredients at home. 
 
-### User Story
-
-NatalieCampbellGit-patch-14
-AS A foodie…
-
-I WANT TO create new recipes based off what I have in my fridge
-SO THAT I can save money and time
-WHEN I enter an ingredient in the search bar
-THEN I am presented with an array of choices (recipes) relevant to the search input
-WHEN I click on one of them
-THEN I am presented with the recipe instructions with all its data (cooking method, ingredients, calories, time, cuisine)
-WHEN I click on the Add To Favorite
-THEN the relevant recipe gets saved in my local storage 
-SO THAT it can be restored at a later date
-
-### Conditions 
-=======
-## To-Do/Back Log
-
-
-# Fridge Fren README
-
 Fridge Fren is a web application that helps you search for recipes based on the ingredients you have in your fridge. This README file provides an overview of the project, its features, and how to set it up.
 
 ## Features
