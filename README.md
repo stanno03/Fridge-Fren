@@ -4,6 +4,8 @@
 
 Food should be fun. Use Fridge Fren to search for recipes using your available ingredients at home. 
 
+
+=======
 ### User Story
 
 ```md
@@ -51,6 +53,7 @@ Link to nutrition tracking apps
 
 
 # Fridge Fren README
+
 
 Fridge Fren is a web application that helps you search for recipes based on the ingredients you have in your fridge. This README file provides an overview of the project, its features, and how to set it up.
 
