@@ -6,7 +6,7 @@ Food should be fun. Use Fridge Fren to search for recipes using your available i
 
 ### User Story
 
-NatalieCampbellGit-patch-14
+```md
 AS A foodie…
 
 I WANT TO create new recipes based off what I have in my fridge
@@ -18,10 +18,36 @@ THEN I am presented with the recipe instructions with all its data (cooking meth
 WHEN I click on the Add To Favorite
 THEN the relevant recipe gets saved in my local storage 
 SO THAT it can be restored at a later date
+```
 
 ### Conditions 
-=======
+```md
+GIVEN I new a recipe to cook a meal for 
+WHEN I add search input 
+THEN I am presented with a list of recipe options
+WHEN I select the recipe I want to explore 
+THEN I am directed to the ingredients and instructions for the dish 
+WHEN I select the random food facts 
+THEN I am presented with a random food fact 
+WHEN I like a recipe 
+THEN I am able to favourite that recipe 
+WHEN I want to recall my favourite recipes 
+THEN I can access the favourite recipes 
+WHEN I want to add the recipe to a calendar 
+THEN I can add a recipe to my google calendar 
+```
+
+
 ## To-Do/Back Log
+```md
+Expanding the search to use other parameters such as cost or cooking time 
+Linking the meal planner to smart fridges for shopping lists 
+Creating a pantry to select all user’s pantry items
+Social links 
+Profile creation
+Tiktok API/token 
+Link to nutrition tracking apps 
+```
 
 
 # Fridge Fren README
