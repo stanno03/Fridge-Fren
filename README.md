@@ -102,6 +102,10 @@ You can click on a recipe to view its ingredients. You can also get a random foo
 ### Footer 
 ![Screen Shot 2023-05-04 at 6 28 12 pm](https://user-images.githubusercontent.com/126050763/236152068-0f51f3f1-f68e-4c51-b508-3f98bd164cd4.png)
 
+### Local Storage
+![Screen Shot 2023-05-06 at 8 23 12 am](https://user-images.githubusercontent.com/126050763/236578972-96a63ddc-838a-41e8-b823-0298219f9c3a.png)
+
+
 
 ## Credits
 
