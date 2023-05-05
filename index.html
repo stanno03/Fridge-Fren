@@ -172,21 +172,9 @@ NatalieCampbellGit-patch-16
   
         <div class="containerEl"> -->
 
-    <footer class="footer">
-
-        <!--
-  Heads up! 👋
-  Plugins:
-    - @tailwindcss/forms
--->
-
-<footer aria-label="Site Footer" class="bg-white">
-    <div class="mx-auto max-w-screen-xl px-4 pb-8 pt-16 sm:px-6 lg:px-8">
-
     <!--! ########## FOOTER COMPONENT ##########-->
     <footer aria-label="Site Footer" class="footer bg-white">
      <div class="mx-auto max-w-screen-xl px-4 pb-8 pt-16 sm:px-6 lg:px-8">
-main
       <div class="mx-auto max-w-md">
         <strong
           class="block text-center text-xl font-bold text-gray-900 sm:text-3xl"
@@ -203,9 +191,11 @@ main
               id="email"
               type="email"
               placeholder="john@doe.com"/>
-  
+
+              <!-- Adding the save to localStorage in the Subscribe button -->
             <button
-              class="absolute end-1 top-1/2 -translate-y-1/2 rounded-full bg-indigo-600 px-5 py-3 text-sm font-medium text-white transition hover:bg-indigo-700">
+              class="absolute end-1 top-1/2 -translate-y-1/2 rounded-full bg-indigo-600 px-5 py-3 text-sm font-medium text-white transition hover:bg-indigo-700"
+              onclick="saveEmailToLocalStorage()">
               Subscribe
             </button>
           </div>
