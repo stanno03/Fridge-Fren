@@ -264,3 +264,10 @@ span.addEventListener("click", function() {
             'Events:\n');
         document.getElementById('content').innerText = output;
       }
+
+      // Adding the save to localStorage in the Subscribe button
+  function saveEmailToLocalStorage() {
+  const emailInput = document.getElementById("email");
+  const email = emailInput.value;
+  localStorage.setItem("email", email);
+}
