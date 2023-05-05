@@ -109,12 +109,12 @@ You can click on a recipe to view its ingredients. You can also get a random foo
 
 ## Credits
 
-Fridge Fren was created by [YOUR NAME]. It uses the following APIs and libraries:
+Fridge Fren was created by Daniel, Natalie and Freddy. It uses the following APIs and libraries:
 
 - [Spoonacular API](https://spoonacular.com/food-api)
 - [Tailwind CSS](https://tailwindcss.com/)
 - [jQuery](https://jquery.com/)
-- [Font Awesome](https://fontawesome.com/)
+- [Google Font](https://fonts.google.com/)
 
 ## License
 
