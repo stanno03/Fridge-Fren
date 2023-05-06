@@ -271,3 +271,22 @@ span.addEventListener("click", function() {
   const email = emailInput.value;
   localStorage.setItem("email", email);
 }
+
+//*Local Storage Star/Favourites 
+
+const starBtn = document.querySelector('.star-btn');
+const favoritesBtn = document.querySelector('.add-to-favorites-btn');
+
+// Add event listener to the star button to toggle its class and save the recipe to local storage
+starBtn.addEventListener('click', () => {
+  starBtn.classList.toggle('hidden');
+  starBtn.nextElementSibling.classList.toggle('hidden');
+  const recipe = { title: 'Recipe Title', calories: 120 }; // Replace with actual recipe data
+  localStorage.setItem('favoriteRecipe', JSON.stringify(recipe));
+});
+
+// Add event listener to the favorites button to retrieve the recipe from local storage
+favoritesBtn.addEventListener('click', () => {
+  const recipe = JSON.parse(localStorage.getItem('favoriteRecipe'));
+  console.log(recipe);
+});
